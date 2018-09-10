@@ -10,7 +10,7 @@ window.onload = () => {
 }
 
 const COUNTDOWN = 3
-const MS = 750
+const MS = 600
 
 var pic
 var interval

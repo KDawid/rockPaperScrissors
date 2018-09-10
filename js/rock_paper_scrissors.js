@@ -18,6 +18,7 @@ var images = ["rock", "paper", "scrissors"]
 var steps = ["Rock", "Paper", "Scrissors"]
 
 function nextStep() {
+    $("go").disabled = true
     countDown(COUNTDOWN)
 }
 
@@ -30,6 +31,7 @@ function countDown(n) {
         }, MS)
     }
     else {
+        $("go").disabled = false
         pic.src = getPngSrc(images[nextIndex()])
     }
 
